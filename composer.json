@@ -1,0 +1,49 @@
+{
+    "name": "redchamps/module-tax-rounding-fix",
+    "description": "Change tax round precision from 2 to 4 in a Magento 2 store",
+    "type": "magento2-module",
+    "keywords": [
+        "php",
+        "magento",
+        "magento2"
+    ],
+    "readme": "README.md",
+    "license": [
+        "OSL"
+    ],
+    "authors": [
+        {
+            "name": "RedChamps",
+            "email": "hello@redchamps.com",
+            "homepage": "https://redchamps.com/",
+            "role": "maintainer"
+        },
+        {
+            "name": "Ravinder",
+            "email": "rav@redchamps.com",
+            "homepage": "https://twitter.com/_iamRav",
+            "role": "maintainer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/redchamps/tax-rounding-fix/",
+        "issues": "https://github.com/redchamps/tax-rounding-fix/issues/"
+    },
+    "require": {
+        "magento/module-tax": "*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "RedChamps\\TaxRoundingFix\\": ""
+        }
+    }
+}
