@@ -15,6 +15,6 @@ class TaxCalculation
 
     public function aroundRound(Calculation $subject, callable $proceed, $price)
     {
-        return $this->priceCurrency->roundPrice($price, 4);
+        return $this->priceCurrency->roundPrice($price, 3);
     }
 }
